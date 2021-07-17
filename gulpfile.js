@@ -143,9 +143,6 @@ function buildImg() {
 function js() {
     return src(path.src.js)
     .pipe(minify())
-    .pipe(gulpRename({
-        suffix: '.min.js'
-    }))
     .pipe(dest(path.build.js))
         .pipe(browserSync.reload({
             stream: true
@@ -156,9 +153,6 @@ function js() {
 function buildJs() {
     return src(path.src.js)
     .pipe(minify())
-    .pipe(gulpRename({
-        suffix: '.min.js'
-    }))
     .pipe(dest(path.build.js))
 
 }
