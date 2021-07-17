@@ -110,6 +110,7 @@ main {
                     line-height: 250px;
                     top: 0;
                     font-weight: 900;
+                    left: 10px;
                 }
 
                 &:nth-child(2):after {
@@ -121,6 +122,7 @@ main {
                     line-height: 250px;
                     top: 0;
                     font-weight: 900;
+                    left: 10px;
                 }
 
                 &:nth-child(3):after {
@@ -132,6 +134,7 @@ main {
                     line-height: 250px;
                     top: 0;
                     font-weight: 900;
+                    left: 10px;
                 }
 
 
@@ -150,6 +153,7 @@ main {
     .sale {
         background: #F9F9F9;
         padding-top: 50px;
+        padding-bottom: 40px;
 
         ._sale__card {
             max-width: 630px;
@@ -243,7 +247,7 @@ main {
     }
 
     .comission {
-        padding-top: 100px;
+        padding-top: 60px;
         background: #F9F9F9;
         position: relative;
 
@@ -598,6 +602,7 @@ main {
         .join__cards {
             display: flex;
             column-gap: 20px;
+
             .join__card {
                 background: #fff;
                 padding: 16px 47px;
@@ -610,14 +615,20 @@ main {
                 align-items: center;
                 justify-content: center;
                 column-gap: 17px;
+
                 .join__card-txt {
-                    color: #1C1B18;
                     font-size: 36px;
                     line-height: 56px;
                     text-transform: capitalize;
                     font-weight: 900;
+
+                    .join__card-link {
+                        color: #1C1B18;
+
+                    }
                 }
             }
+
             .join__card-content {
                 display: flex;
                 align-items: center;
@@ -625,10 +636,12 @@ main {
                 column-gap: 13px;
             }
         }
+
         .join__content {
             background: #EB2629;
             max-width: 470px;
             width: 100%;
+
             .join__content-txt {
                 font-size: 24px;
                 line-height: 34px;

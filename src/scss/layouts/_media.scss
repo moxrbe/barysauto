@@ -8,6 +8,11 @@
         font-size: 38px;
     }
 
+    .img__txt {
+        bottom: 8%;
+        right: 54%;
+    }
+
     .header__content-banner {
         right: -24%;
         top: -29%;
@@ -30,8 +35,17 @@
         bottom: -11% !important;
     }
 
+    .free__card-2{
+        font-size: 28px !important;
+    }
+
     .join__banner {
         max-width: 58%;
+    }
+
+    .join__car {
+        right: 15% !important;
+        top: 10% !important;
     }
 }
 
@@ -188,6 +202,10 @@
 }
 
 @media(max-width: 992px) {
+
+    .number__card-img {
+        display: none;
+    }
 
     .add {
         .nav__menu {
@@ -353,9 +371,7 @@
 }
 
 @media (max-width: 576px) {
-    .number__card-img {
-        display: none;
-    }
+
 
     .free__card-2 {
         width: 320px;
