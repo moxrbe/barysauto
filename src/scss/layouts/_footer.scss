@@ -4,7 +4,7 @@ footer {
     .footer__container {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding: 50px 0;
 
         .footer__banner {
@@ -14,7 +14,8 @@ footer {
             .footer__img {
                 width: 100%;
             }
-            .footer__img-txt{
+
+            .footer__img-txt {
                 font-weight: 400;
             }
         }
@@ -23,36 +24,51 @@ footer {
         .footer__list {
             display: flex;
             flex-direction: column;
-            row-gap: 5px;
-        }
+            row-gap: 10px;
 
-        .footer__list:last-child {
-            text-align: end;
+            &:last-child {
+                text-align: end;
+                row-gap: 1px;
 
-            .footer__item:nth-child(2) {
-                max-width: 237px;
-            }
+                .footer__item {
 
+                    &:nth-child(2) {
+                        max-width: 237px;
+                    }
 
-            .footer__item:first-child {
-                font-weight: 900;
-                font-size: 22px;
-                line-height: 22px;
+                    &:first-child {
+                        font-weight: 900;
+                        font-size: 22px;
+                        line-height: 22px;
 
-            }
+                    }
 
-            .footer__item:last-child {
-                .footer__link:last-child {
-                    border-bottom: 1px #1C1B18 solid;
-                    font-weight: 400;
+                    &:last-child {
+                        .footer__link:last-child {
+                            border-bottom: 1px #1C1B18 solid;
+                            font-weight: 400;
+
+                        }
+                    }
                 }
+
+
+
             }
         }
+
 
         .footer__link {
             color: #1C1B18;
             font-size: 14px;
             line-height: 24px;
+
+            &:first-child {
+                .footer__phone-icon {
+                    width: 14px;
+                    margin-right: 10px;
+                }
+            }
         }
     }
 
