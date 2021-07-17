@@ -1,0 +1,390 @@
+@media (max-width: 1900px) {
+
+    .header__content-img {
+        max-width: 70%;
+    }
+
+    .header__content-title {
+        font-size: 38px;
+    }
+
+    .header__content-banner {
+        right: -24%;
+        top: -29%;
+        z-index: 1;
+    }
+
+    .number__card-img {
+        top: 250% !important;
+        max-width: 20%;
+    }
+
+    .comission__img {
+        max-width: 36%;
+    }
+
+    .comission__card-banner-2 {
+        max-width: 15%;
+        bottom: -15% !important;
+    }
+
+    .join__banner {
+        max-width: 58%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .header__content-banner {
+        position: absolute;
+        right: -24%;
+        top: -30%;
+
+    }
+
+
+
+
+
+    .free__card-img2 {
+        max-width: 41%;
+    }
+}
+
+
+@media (max-width: 1366px) {
+    .header__content-banner {
+        position: absolute;
+        right: -30%;
+        top: -26%;
+
+        .header__content-img {
+            max-width: 66%;
+        }
+    }
+}
+
+@media (max-width: 1320px) {
+    .header__content-banner {
+        right: -32%;
+    }
+
+    .advantage__card-img {
+        max-width: 45%;
+    }
+
+    .free__card-title {
+        font-size: 24px;
+    }
+}
+
+//  @media (max-width: 1290px) {
+// } 
+@media (max-width: 1290px) {
+    .header__content-banner {
+        right: -40%;
+        top: -33%;
+    }
+
+    .header__content-img {
+        max-width: 55%;
+    }
+
+    .header__content-title {
+        font-size: 40px;
+        line-height: 55px;
+        max-width: 550px;
+    }
+
+    .img__txt {
+        bottom: 5%;
+        right: 51%;
+    }
+
+
+    .sale__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .barys__cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 70px;
+    }
+
+    .number__card-img {
+        max-width: 29%;
+    }
+
+    .number__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .free__card-img {
+        bottom: 7% !important;
+        max-width: 57%;
+    }
+
+    .join__title {
+        font-size: 46px !important;
+    }
+
+    .join__txt {
+        font-size: 24px !important;
+    }
+
+    .market__card {
+        width: 380px;
+
+        .market__card-txt {
+            font-style: 14px;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+
+    .header__nav-list {
+        display: block;
+    }
+
+    .content__container {
+        justify-content: center;
+        text-align: center;
+
+        .header__content-banner {
+
+            display: none;
+        }
+
+        .header__content-txt {
+            margin: 0 auto;
+        }
+
+        .header__content-card {
+            justify-content: center;
+        }
+
+    }
+
+    .comission__img {
+        top: -6% !important;
+    }
+
+    .comission__card-banner-2 {
+        bottom: -10% !important;
+    }
+
+    .free__card {
+        max-width: 650px !important;
+        padding: 15px 20px 45px 75px !important;
+        font-size: 14px !important;
+    }
+
+    .free__card-title {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width: 992px) {
+
+    .add{
+        .nav__menu{
+            display: flex;
+        }
+        .add__email{
+            display: none;
+        }
+        .add__number{
+            display: none;
+        }
+        .add__content-txt{
+            display: none;
+        }
+        .add__container{
+            justify-content: space-between;
+        }
+        .add__content{
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+    }
+    .nav__menu{
+        display: flex;
+    }
+    .header__nav-list{
+       display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    
+
+    .free__card-img {
+        display: none;
+    }
+
+    .free__card {
+        margin: 53px auto !important;
+    }
+
+    .free__card-2 {
+        padding: 15px 30px !important;
+    }
+
+    .free__card-title {
+        line-height: 34px;
+    }
+
+    .join__banner {
+        display: none;
+    }
+
+    .join__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .join__cards {
+        flex-direction: column;
+
+        .join__card {
+            margin-left: 0 !important;
+        }
+    }
+
+    .join__map {
+        height: 250px;
+        margin-top: 150px !important;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        row-gap: 30px;
+        text-align: center;
+    }
+    .footer__list:last-child{
+        text-align: center !important;
+    }
+
+}
+
+
+@media (max-width: 736px) {}
+
+/* @media (max-width: 734px) {} */
+/* @media (max-width: 684px) {} */
+ @media (max-width: 667px) {
+     .comission__img{
+         display: none;
+     }
+     .comission__title{
+         font-size: 24px !important;
+     }
+     .comission__title-2{
+         font-size: 35px !important;
+     }
+     .comission__txt{
+         font-size: 24px !important;
+     }
+     .comission__card-banner-2{
+         bottom: -7% !important;
+     }
+     .free__card-title{
+         font-size: 14px !important;
+         padding: 5px 10px;
+         line-height: 20px;
+         font-weight: 500;
+     }
+     .merket__title{
+         font-size: 35px !important;
+     }
+     .advantage__title{
+         font-size: 35px !important;
+     }
+     .sale__title{
+         font-size: 35px !important;
+     }
+     .barys__title-2{
+         font-size: 35px !important;
+         text-align: center;
+     }
+     .barys__title{
+         font-size: 35px !important;
+         text-align: center;
+     }
+     .header__content-title{
+         font-size: 35px !important;
+     }
+     .join__title{
+         font-size: 35px !important;
+     }
+     .join__content-txt{
+         font-size: 18px !important;
+     }
+ }
+ @media (max-width: 576px) {
+     .number__card-img{
+         display: none;
+     }
+ } 
+ @media (max-width: 414px) {
+    .free__card-title{
+        font-size: 14px !important;
+        padding: 5px 10px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    .merket__title{
+        font-size: 24px !important;
+    }
+    .advantage__title{
+        font-size: 24px !important;
+    }
+    .sale__title{
+        font-size: 24px !important;
+    }
+    .barys__title-2{
+        font-size: 24px !important;
+        text-align: center;
+    }
+    .barys__title{
+        font-size: 24px !important;
+        text-align: center;
+    }
+    .header__content-title{
+        font-size: 24px !important;
+    }
+    .join__title{
+        font-size: 24px !important;
+    }
+    .join__content-txt{
+        font-size: 18px !important;
+    }
+    .comission__card-banner-2{
+        display: none;
+    }
+
+    .free__card-2{
+        width: 245px;
+    }
+    .free__card-title{
+        font-size: 11px !important;
+    }
+    .market__card-txt{
+        font-size: 14px !important;
+    }
+
+    .join__card-txt{
+        font-size: 18px !important;
+    }
+ } 
+/* @media (max-width: 412px) {} */
+/* @media (max-width: 375px) {} */
+/* @media (max-width: 360px) {} */
+/* @media (max-width: 320px) {} */
