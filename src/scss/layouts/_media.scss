@@ -193,7 +193,7 @@
 
     .add {
         .nav__menu {
-            display: flex;
+            display: flex !important;
         }
 
         .add__email {
@@ -219,7 +219,7 @@
     }
 
     .nav__menu {
-        display: flex;
+        display: flex !important;
     }
 
     .header__nav-list {
@@ -356,6 +356,11 @@
 @media (max-width: 576px) {
     .number__card-img {
         display: none;
+    }
+
+    .free__card-2{
+        width: 320px;
+        bottom: 8%;
     }
 }
 
