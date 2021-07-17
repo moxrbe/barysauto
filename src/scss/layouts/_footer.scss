@@ -14,6 +14,9 @@ footer {
             .footer__img {
                 width: 100%;
             }
+            .footer__img-txt{
+                font-weight: 400;
+            }
         }
 
 
@@ -41,7 +44,7 @@ footer {
             .footer__item:last-child {
                 .footer__link:last-child {
                     border-bottom: 1px #1C1B18 solid;
-
+                    font-weight: 400;
                 }
             }
         }

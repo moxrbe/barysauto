@@ -9,9 +9,25 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+*::-webkit-scrollbar {
+    width: 7px;
+    background: #1C1B18;
+}
+*::-webkit-scrollbar-thumb {
+    background: #eb2629;
+    border-radius: 10px;
+}
 
 body{
     font-family: 'Muller';
+    position: relative;
+    &after{
+        
+            border: 1px solid #eb2629;
+            height: 100%;
+            position: absolute;
+        
+    }
 }
 
 a{
