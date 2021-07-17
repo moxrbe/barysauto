@@ -267,7 +267,7 @@ main {
         .comission__img {
             position: absolute;
             right: 0;
-            top: -10%;
+            top: -4%;
 
         }
 
@@ -596,9 +596,7 @@ main {
 
         .join__cards {
             display: flex;
-            align-items: center;
             column-gap: 20px;
-
             .join__card {
                 background: #fff;
                 padding: 16px 47px;
@@ -607,7 +605,6 @@ main {
                 width: 100%;
                 text-align: center;
                 margin-left: 39px;
-
                 .join__card-txt {
                     color: #1C1B18;
                     font-size: 36px;
@@ -616,7 +613,6 @@ main {
                     font-weight: 900;
                 }
             }
-
             .join__card-content {
                 display: flex;
                 align-items: center;
@@ -624,12 +620,10 @@ main {
                 column-gap: 13px;
             }
         }
-
         .join__content {
             background: #EB2629;
             max-width: 470px;
             width: 100%;
-
             .join__content-txt {
                 font-size: 24px;
                 line-height: 34px;

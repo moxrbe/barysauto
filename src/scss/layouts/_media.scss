@@ -21,11 +21,13 @@
 
     .comission__img {
         max-width: 36%;
+        top: 2% !important;
+
     }
 
     .comission__card-banner-2 {
         max-width: 15%;
-        bottom: -15% !important;
+        bottom: -11% !important;
     }
 
     .join__banner {
@@ -250,7 +252,8 @@
     .join__banner {
         display: none;
     }
-    .join__car{
+
+    .join__car {
         display: none;
     }
 
@@ -358,7 +361,7 @@
         display: none;
     }
 
-    .free__card-2{
+    .free__card-2 {
         width: 320px;
         bottom: 8%;
     }
