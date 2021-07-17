@@ -194,6 +194,7 @@ main {
             position: relative;
             margin-top: 70px;
             width: 100%;
+            @extend %globalShadow;
 
             .sale__card-txt {
                 line-height: 26px;
@@ -464,7 +465,6 @@ main {
 
         .free__card-2 {
             background: #EB2629;
-            width: 750px;
             max-width: 100%;
             text-align: center;
             font-size: 36px;
@@ -571,7 +571,7 @@ main {
         .join__car {
             position: absolute;
 
-            right: 22%;
+            right: 20%;
             top: 1%;
             width: 16%;
 
