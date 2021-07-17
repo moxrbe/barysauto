@@ -64,6 +64,20 @@ function compileCss() {
         .pipe(browserSync.stream());
 }
 
+function buildCss() {
+    return src(path.src.scss)
+        .pipe(sass({
+            outputStyle: "compressed"
+        }).on('error', sass.logError))
+        .pipe(
+            gulpRename({
+                extname: ".min.css"
+            })
+        )
+        .pipe(dest(path.build.css))
+}
+
+
 function html() {
     return src(path.src.html)
         .pipe(include({
@@ -76,6 +90,15 @@ function html() {
         }));
 }
 
+function buildHtml() {
+    return src(path.src.html)
+        .pipe(include({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(dest(project_folder))
+}
+
 function img() {
     return src(path.src.img)
         .pipe(
@@ -83,8 +106,6 @@ function img() {
                 quality: 70
             })
         )
-        .pipe(dest(path.build.img))
-        .pipe(src(path.src.img))
         .pipe(
             imgmin({
                 progressive: true,
@@ -97,6 +118,26 @@ function img() {
         )
         .pipe(dest(path.build.img))
         .pipe(browserSync.stream())
+}
+
+function buildImg() {
+    return src(path.src.img)
+        .pipe(
+            webp({
+                quality: 70
+            })
+        )
+        .pipe(
+            imgmin({
+                progressive: true,
+                svgoPlugins: [{
+                    removeViewBox: false
+                }],
+                interlaced: true,
+                optimizationLevel: 3
+            })
+        )
+        .pipe(dest(path.build.img))
 }
 
 function js() {
@@ -112,6 +153,15 @@ function js() {
 
 }
 
+function buildJs() {
+    return src(path.src.js)
+    .pipe(minify())
+    .pipe(gulpRename({
+        suffix: '.min.js'
+    }))
+    .pipe(dest(path.build.js))
+
+}
 
 function fonts() {
     return src(path.src.fonts)
@@ -119,6 +169,11 @@ function fonts() {
         .pipe(browserSync.reload({
             stream: true
         }));
+}
+
+function buildFonts() {
+    return src(path.src.fonts)
+        .pipe(dest(path.build.fonts))
 }
 
 function cleanDir() {
@@ -132,6 +187,8 @@ function watchFiles() {
     watch(path.src.img, parallel(img));
     watch(path.src.fonts, parallel(fonts));
 }
+
+exports.build = parallel(buildCss, buildHtml, buildJs, buildFonts, buildImg);
 
 exports.clean = cleanDir;
 exports.default = parallel(compileCss, watchFiles, liveServer, html, js, fonts, img);
