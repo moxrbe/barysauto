@@ -222,23 +222,52 @@
 
 
     .header__nav-list {
-        height: 100vh;
+        height: 100%;
+        width: 70%;
         position: absolute;
         left: -100%;
         z-index: 10;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background: #fff;
-        transition: left 1s ease;
+        transition: 0.4s;
         display: none;
         row-gap: 5px;
         font-size: 24px;
+        
+    }
+
+    .add__contact {
+        display: none !important;
     }
 
     .header__nav-list.active {
         left: 0;
+        align-items: baseline;
+        padding-left: 10px;
+        justify-content: flex-start;
+
+        .add__contact {
+            transition: 0.4s;
+            display: flex !important;
+            flex-direction: column;
+            row-gap: 10px;
+            padding-top: 10px;
+
+            .add__email{
+                font-size: 16px;
+                line-height: 13px;
+                color: #1C1B18;
+                font-family: 'Muller';
+                font-weight: 400;
+            }
+            .add__number {
+                font-family: 'Muller';
+                margin-top: 5px;
+                @include font(22px, 900, #1C1B18, 22px);
+            }
+        }
     }
+
 
 
 
@@ -255,8 +284,8 @@
 
     .header__nav-list li a:hover {
         background: none;
-        font-weight: 900;
-        font-size: 24px;
+        font-weight: 700;
+        font-size: 18px;
     }
 
 
@@ -368,7 +397,8 @@
         font-weight: 700 !important;
         text-align: center !important;
     }
-    .join__card-txt{
+
+    .join__card-txt {
         font-size: 24px !important;
     }
 }
@@ -403,7 +433,7 @@
     }
 
     .comission__title-2 {
-        font-size: 30px !important;
+        font-size: 26px !important;
         line-height: 40px !important;
     }
 
@@ -425,24 +455,24 @@
     }
 
     .merket__title {
-        font-size: 30px !important;
+        font-size: 26px !important;
     }
 
     .advantage__title {
-        font-size: 30px !important;
+        font-size: 26px !important;
     }
 
     .sale__title {
-        font-size: 30px !important;
+        font-size: 26px !important;
     }
 
     .barys__title-2 {
-        font-size: 30px !important;
+        font-size: 26px !important;
         text-align: center;
     }
 
     .barys__title {
-        font-size: 30px !important;
+        font-size: 26px !important;
         text-align: center;
     }
 
@@ -452,7 +482,7 @@
     }
 
     .join__title {
-        font-size: 30px !important;
+        font-size: 26px !important;
     }
 
     .join__content-txt {
@@ -463,6 +493,18 @@
 @media (max-width: 576px) {
 
 
+    .number__card-txt {
+        font-size: 16px !important;
+    }
+
+    .card__title {
+        font-size: 18px !important;
+    }
+
+    .card__txt {
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
 
     .free__card-2 {
         width: 320px;
@@ -503,6 +545,25 @@
     .sale__card-txt {
         font-size: 12px !important;
         font-weight: 700 !important;
+    }
+
+    .card__txt {
+        font-size: 12px !important;
+        font-weight: 700 !important;
+    }
+
+    .comission__card-txt2 {
+        font-size: 12px !important;
+        font-weight: 700 !important;
+    }
+
+    .free__card-txt {
+        font-size: 12px !important;
+        font-weight: 700 !important;
+    }
+
+    .advantage__card-txt {
+        font-size: 16px !important;
     }
 
     .free__card-title {
