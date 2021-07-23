@@ -154,9 +154,21 @@
             font-style: 14px;
         }
     }
+
+    .free__card-2 {
+
+        bottom: 11% !important;
+        padding: 21px 40px;
+
+        .free__card-title {
+            font-size: 20px;
+            line-height: 35px;
+            font-weight: 700;
+        }
+    }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1170px) {
 
     .header__nav-list {
         display: block;
@@ -182,7 +194,7 @@
     }
 
     .comission__img {
-        top: -6% !important;
+        top: 7% !important;
     }
 
     .comission__card-banner-2 {
@@ -190,13 +202,18 @@
     }
 
     .free__card {
-        max-width: 650px !important;
-        padding: 15px 20px 45px 75px !important;
+        max-width: 750px !important;
+        padding: 15px 20px 65px 75px !important;
         font-size: 14px !important;
     }
 
     .free__card-title {
-        font-size: 16px;
+        font-size: 16px !important;
+    }
+
+    .free__card-2 {
+        bottom: 9% !important;
+        left: 60% !important;
     }
 
 }
@@ -205,21 +222,25 @@
 
 
     .header__nav-list {
-        height: 50vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
+        height: 100vh;
+        position: absolute;
+        left: -100%;
         z-index: 10;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: #fff;
-        transition: top 1s ease;
+        transition: left 1s ease;
         display: none;
         row-gap: 5px;
         font-size: 24px;
     }
+
+    .header__nav-list.active {
+        left: 0;
+    }
+
+
 
     .close {
         display: flex !important;
@@ -245,8 +266,32 @@
         display: none;
     }
 
-    
+    .free__card-2 {
+        padding: 21px 35px !important;
+        bottom: 9% !important;
+    }
 
+
+
+}
+
+@media (max-width: 800px) {
+    .free__card-2 {
+        line-height: 26px !important;
+        bottom: 8% !important;
+    }
+
+}
+
+@media(max-width: 790px) {
+    .free__card-title {
+        line-height: 24px !important;
+        font-weight: 500;
+    }
+
+    .free__card-2 {
+        bottom: 6% !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -257,16 +302,8 @@
         display: none;
     }
 
-    .free__card {
-        margin: 53px auto !important;
-    }
-
     .free__card-2 {
-        padding: 15px 30px !important;
-    }
-
-    .free__card-title {
-        line-height: 34px;
+        bottom: 2% !important;
     }
 
     .join__banner {
@@ -309,12 +346,33 @@
     .add__container {
         flex-direction: column;
         row-gap: 20px;
-        .add__contact{
+
+        .add__contact {
             text-align: center !important;
         }
     }
 
+    .advantage {
+        padding-bottom: 170px !important;
+    }
 
+    .comission__img {
+        display: none;
+    }
+
+    .join__txt {
+        padding: 20px 0 50px !important;
+    }
+
+    .join__content-txt {
+        font-size: 18px !important;
+        line-height: 26px !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+    }
+    .join__card-txt{
+        font-size: 24px !important;
+    }
 }
 
 
@@ -323,20 +381,38 @@
 /* @media (max-width: 734px) {} */
 /* @media (max-width: 684px) {} */
 @media (max-width: 667px) {
-    .comission__img {
-        display: none;
+
+    .free__card {
+        padding: 15px 20px 75px 20px !important;
+
+        .free__card-txt {
+            text-align: center !important;
+        }
+    }
+
+    .free__card-2 {
+        width: 320px;
+        left: 50% !important;
     }
 
     .comission__title {
         font-size: 24px !important;
     }
 
+    .comission__card {
+        padding: 35px !important;
+        border: 5px solid #eb2629 !important;
+    }
+
     .comission__title-2 {
-        font-size: 35px !important;
+        font-size: 30px !important;
+        line-height: 40px !important;
     }
 
     .comission__txt {
         font-size: 24px !important;
+        line-height: 40px !important;
+        margin-top: 15px;
     }
 
     .comission__card-banner-2 {
@@ -351,33 +427,34 @@
     }
 
     .merket__title {
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
 
     .advantage__title {
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
 
     .sale__title {
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
 
     .barys__title-2 {
-        font-size: 35px !important;
+        font-size: 30px !important;
         text-align: center;
     }
 
     .barys__title {
-        font-size: 35px !important;
+        font-size: 30px !important;
         text-align: center;
     }
 
     .header__content-title {
-        font-size: 35px !important;
+        font-size: 26px !important;
+        line-height: 36px;
     }
 
     .join__title {
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
 
     .join__content-txt {
@@ -388,13 +465,48 @@
 @media (max-width: 576px) {
 
 
+
     .free__card-2 {
         width: 320px;
         bottom: 8%;
     }
+
+    .map {
+        width: 25%;
+    }
+
+    .join__title {
+        line-height: 24px !important;
+    }
+
+    .join__txt {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+
+    .join__card-txt {
+        font-size: 24px !important;
+        line-height: 40px !important;
+    }
 }
 
 @media (max-width: 414px) {
+
+    .comission__card {
+        padding: 15px !important;
+        border: 3px solid #eb2629 !important;
+
+        .comission__card-txt {
+            font-size: 13px !important;
+            font-weight: 700 !important;
+        }
+    }
+
+    .sale__card-txt {
+        font-size: 12px !important;
+        font-weight: 700 !important;
+    }
+
     .free__card-title {
         font-size: 14px !important;
         padding: 5px 10px;
@@ -426,6 +538,12 @@
 
     .header__content-title {
         font-size: 24px !important;
+        line-height: 36px !important;
+    }
+
+    .header__content-txt {
+        font-size: 16px;
+        font-weight: 400;
     }
 
     .join__title {
@@ -442,6 +560,7 @@
 
     .free__card-2 {
         width: 245px;
+        padding: 20px !important;
     }
 
     .free__card-title {
@@ -459,5 +578,16 @@
 
 /* @media (max-width: 412px) {} */
 /* @media (max-width: 375px) {} */
-/* @media (max-width: 360px) {} */
+@media (max-width: 360px) {
+    .comission__card {
+        padding: 10px !important;
+        border: 2px solid #eb2629 !important;
+
+        .comission__card-txt {
+            font-size: 11px !important;
+            font-weight: 500 !important;
+        }
+    }
+}
+
 /* @media (max-width: 320px) {} */
